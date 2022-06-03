@@ -17,12 +17,16 @@
 \usepackage{psfrag}
 \usepackage{pgfplots}
 \usepackage{bm}
+\usepackage[spanish]{babel}
+\usepackage{biblatex}
+\usepackage{csquotes}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Other Settings
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Page Setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \geometry{a4paper}
+\graphicspath{{img/}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Define some useful colors %%%%%%%%%%%%%%%%%%%%%%%%%%
 \definecolor{ocre}{RGB}{243,102,25}
@@ -61,25 +65,8 @@
 \begin{document}
 
 \maketitle
-Hola Mundo
-so
-\lipsum[2]
-Hola, como estás, yo bien 
+\input{lib/capitulo1.tex}
 
-\begin{itemize}
-    \item 1
-    \item 2
-    \item 3
-    \item 4
-\end{itemize}
-
-Claro que no es posible dar explicaciones en lo que se refiere a Latex
-
-\begin{equation}
-    \begin{bmatrix}
-        1 & 2 \\
-        3 & 4 
-    \end{bmatrix}
-\end{equation}
+\printbibliography
 
 \end{document}
